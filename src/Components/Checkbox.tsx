@@ -1,4 +1,4 @@
-const Checkbox = ({ label }) => {
+const Checkbox = ({ label }:any) => {
     return (
         <>
             <label>
