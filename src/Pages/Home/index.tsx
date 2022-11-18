@@ -2,7 +2,9 @@ function Home() {
 
     return(
         <div>
-          Vamo nessa!
+          <h1 className="text-3xl font-bold underline">
+            Hello world!
+          </h1>
         </div>
     )
 }
