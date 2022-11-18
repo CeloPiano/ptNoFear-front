@@ -1,10 +1,11 @@
 import PlusButton from '../Components/PlusButton'
+import PLACEHOLDER from '../Assets/PLACEHOLDER.png'
 
 function Login() {
 
     return(
         <div>
-          <img src = "http://cdn.thinglink.me/api/image/832723959517544448/1024/10/scaletowidth/0/0/1/1/false/true?wait=true" alt="Placeholder" className="absolute top-[80px] left-[330px]"/>
+          <img src = {PLACEHOLDER} alt="Placeholder" className="absolute top-[180px] left-[435px]"/>
           <h1 className="font-['Inter'] text-[100px] font-[100] italic text-center absolute top-[631px] left-[581px]">
             SOPT
           </h1>
