@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'button-color': '284b63',
+        'button-color': '#284b63',
       }
     },
   },
