@@ -9,7 +9,7 @@ const Header = () => {
             <div className = "bg-transparent">
                 <img src = {Logo} alt = "CJR SOPT Logo" className = "bg-transparent mx-2"/>
             </div>
-            <div className = "bg-transparent flex">
+            <div className = "bg-transparent flex gap-x-[26px]">
                 <div className = "bg-transparent">
                     <Redirect Label = "Aulas"/>
                 </div>
