@@ -6,14 +6,14 @@ function Cronograma () {
         <div className = "py-[72px] flex items-center justify-center content-center">
             <div className = "box-content rounded-2xl bg-button-color h-[762px] w-[775px] shadow-default flex flex-col">
                 <div className = "p-[53px] bg-transparent flex justify-between place-items-center">
-                    <h1 className = "bg-transparent text-white text-[48px] font-inter font-400">
+                    <h1 className = "bg-transparent text-lighter-background-color text-[48px] font-inter font-400">
                         Cronograma
                     </h1>
                     <div className = "bg-transparent flex justify-center content-center">
                         <SemestreDropdown Label = "Semestre"/>
                     </div>
                 </div>
-                <div className = "bg-transparent flex flex-row justify-around font-inter font-[400] text-[20px] text-[#D9D9D9]">
+                <div className = "bg-transparent flex flex-row justify-around font-inter font-[400] text-[20px] text-lighter-background-color">
                     <div className = "bg-transparent">
                         Aula
                     </div>

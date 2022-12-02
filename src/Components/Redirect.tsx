@@ -3,17 +3,11 @@ import { useLocation } from "react-router-dom"
 
 const Redirect = ({Label}:any) => {
 
-
     const destination:string = ("/" + {Label}.Label).normalize("NFD").replace(/\p{Diacritic}/gu, "")
 
     const location = useLocation().pathname
 
     function underline_if_link () {
-
-        console.log(location)
-
-        console.log(destination)
-
         if (location === destination){
             return "bg-transparent underline"
         }
@@ -29,7 +23,7 @@ const Redirect = ({Label}:any) => {
             </div>
         </a>
 
-    );
-};
+    )
+}
 
-export default Redirect;
+export default Redirect

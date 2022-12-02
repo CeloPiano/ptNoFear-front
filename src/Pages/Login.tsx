@@ -1,4 +1,5 @@
 import Classroom from '../Assets/Classroom.png'
+import LoginButton from '../Components/LoginButton'
 
 function Login() {
 
@@ -11,7 +12,8 @@ function Login() {
             SOPT
           </h1>
           <div className="flex items-center justify-center pt-6">
-            <button className="font-inter text-[20px] font-[400] text-center text-white px-7 py-1 box-content bg-button-color rounded-md">Entrar com o Google</button>
+            {/* <button className="font-inter text-[20px] font-[400] text-center text-white px-7 py-1 box-content bg-button-color rounded-md">Entrar com o Google</button> */}
+            <LoginButton />
           </div>
         </div>
       </div>
