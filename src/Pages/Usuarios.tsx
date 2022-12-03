@@ -1,3 +1,5 @@
+import UsuarioComp from "../Components/UsuarioComp"
+
 function Usuarios () {
     return(
         <div className = "pt-[72px] flex items-center justify-center content-center">
@@ -14,6 +16,11 @@ function Usuarios () {
                     <div className = "bg-transparent">
                         Admin
                     </div>
+                </div>
+                <div className = "pt-[21px] bg-transparent flex justify-center place-items-center flex-col gap-[20px]">
+                    <UsuarioComp Label = "Rodrigo"/>
+                    <UsuarioComp Label = "Jonas" />
+                    <UsuarioComp Label = "Piano" />
                 </div>
             </div>
         </div>

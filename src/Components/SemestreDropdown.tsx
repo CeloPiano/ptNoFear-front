@@ -20,7 +20,7 @@ const SemestreDropdown = ({Label}:any) => {
                     {Label}
                 </button>
                 <div className="flex justify-center bg-transparent">
-                    <div ref = {dropdown_ref} className="absolute hidden flex-col shadow-default outline outline-1 outline-darker-background-color bg-white">
+                    <div ref = {dropdown_ref} className="absolute hidden flex-col shadow-default outline outline-1 outline-darker-background-color bg-lighter-background-color">
                         <a className = "w-[110px] flex justify-center bg-inherit" href = "#">2019/1</a>
                         <a className = "w-[110px] flex justify-center bg-inherit"  href = "#">2019/2</a>
                         <a className = "w-[110px] flex justify-center bg-inherit"  href = "#">2020/1</a>
