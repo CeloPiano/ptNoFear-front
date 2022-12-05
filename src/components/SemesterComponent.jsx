@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import api from '../services/api';
 import Modal from "./Modal";
+import PlusCircle from '../assets/PlusCircle.png'
 
 
 export default function SemesterComponent(props){
@@ -64,10 +65,10 @@ export default function SemesterComponent(props){
     },[])
 
     return Semesters ? (
-        <div className="w-[45%]">
-            <div className="flex justify-between">
+        <div className="mx-2 w-[100%]">
+            <div className="mb-3 flex justify-between">
                 <h2>Semestre</h2>
-                <button onClick={handleClickModal} >Open modal</button>
+                <button onClick={handleClickModal} ><img src={PlusCircle} alt="botão de adicionar"/></button>
             </div>
             {openModal ? (<Modal createAndUpdateContent={createAndUpdateSemester} open = {openModal} handleCancelButton={handleCancelButton} handleConfirmButton={handleConfirmButton} title={Title}/>) : null}
             <DropDowm handleDeleteContent={handleDeleteSemester} handleClickModal={handleClickModal} handleChangeContent={props.handleChangeSemester} Content={props.Semester} ListContent = {Semesters} PlaceHolder ={"Escolha o Semestre"}/>

@@ -1,6 +1,5 @@
 import trash from '../assets/Trash.png'
 import pencil from '../assets/Pencil.png'
-import api from '../services/api';
 import { useState } from 'react';
 
 export default function OptionSelect(props){

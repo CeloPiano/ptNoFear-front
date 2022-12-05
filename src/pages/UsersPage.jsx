@@ -2,6 +2,7 @@ import api from '../services/api'
 import TableUser from '../components/TableUser'
 import { useEffect } from 'react'
 import { useState } from 'react'
+import Spinner from '../components/Spinner'
 
 export default function UsersPage(){
     const [Users,setUsers] = useState(null)
@@ -22,5 +23,5 @@ export default function UsersPage(){
         fetchUsersInfo();
       },[])
     
-    return Users ? (<TableUser Users ={Users}/>) : null 
+    return Users ? (<TableUser Users ={Users}/>) : <Spinner/>
 }

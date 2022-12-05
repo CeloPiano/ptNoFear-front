@@ -10,7 +10,7 @@ export default function LoginButton() {
   const { signin } = useAuth()
   const ref = useRef(null)
 
-  const from = location.state?.from?.pathname || '/'
+  const from = location.state?.from?.pathname || '/Aulas'
 
   useGoogleAuth(ref, (response) => {
     if (response.credential) {

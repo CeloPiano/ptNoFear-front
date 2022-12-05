@@ -32,7 +32,7 @@ export default function CheckButton(props){
 
     return openModal ?  (<>
         <input className="outline outline-1 outline-black accent-gray-color" type="checkbox" checked={isCheckOnly} onChange={HandleChangeCheckBox} />
-        <Modal Text={"Tem certeza que deseja torna-lo administrador"} createAndUpdateContent={handleTurnInAdmin} open = {openModal} handleCancelButton={handleButton} handleConfirmButton={handleButton} title={''}/>
+        <Modal Text={"Tem certeza que deseja torna-lo administrador ?"} createAndUpdateContent={handleTurnInAdmin} open = {openModal} handleCancelButton={handleButton} handleConfirmButton={handleButton} title={''}/>
         </>) : (
         <input className="outline outline-1 outline-black accent-gray-color" type="checkbox" checked={isCheckOnly} onChange={HandleChangeCheckBox} />
     )

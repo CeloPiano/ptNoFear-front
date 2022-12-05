@@ -94,6 +94,40 @@ class CJRNoFearApi {
     return response.data
   }
 
+  async createLesson(Lesson){
+    const response = await this.api.post('/lessons/create',Lesson)
+    return response.data
+  }
+
+  async updateLesson(id,Lesson){
+    const response = await this.api.patch(`/lessons/${id}`,Lesson)
+    return response.data
+  }
+
+  async getLessons(){
+    const response = await this.api.get('/lessons')
+    return response.data
+  }
+
+  async getLesson(id){
+    const response = await this.api.get(`/lessons/${id}`)
+    return response.data
+  }
+
+  async getTheme(id){
+    const response = await this.api.get(`/themes/${id}`)
+    return response.data
+  }
+
+  async getSemester(id){
+    const response = await this.api.get(`/semesters/${id}`)
+    return response.data
+  }
+
+  async deleteLesson(id) {
+    const response = await this.api.post('/lessons/delete',{id})
+    return response.data
+  }
 }
 
 const cjrNoFearApi = new CJRNoFearApi()

@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-function Teste(props){
+function Input(props){
     return (
         <input
-            className='text-black'
+            className='border-solid border-2 border-gray-400 p-2 text-black w-[100%]'
             type="text"
             value={props.Content}
             placeholder='Escreva aqui'
@@ -25,17 +25,17 @@ export default function Modal(props){
     }
 
     return (
-        <div className="modal">
-            <div className="modal-content">
-                <div className="modal-header">
-                    <h4 className="modal-title">{props.title}</h4>
+        <div className="modal text-black">
+            <div className="absolute w-[350px] h-[180px] left-[500px] top-[240px] bg-[#EDEDE9] shadow-default rounded-xl">
+                <div className="p-5">
+                    <h4 className="">{props.title}</h4>
                 </div>
-                <div className="modal-body">
-                    {props.title.length > 0 ? <Teste Content={Content} HandleChangeText={HandleChangeText}/>: props.Text}
+                <div className="w-[100%] px-5">
+                    {props.title.length > 0 ? <Input Content={Content} HandleChangeText={HandleChangeText}/>: props.Text}
                 </div>
-                <div className="modalfooter">
-                    <input type="button" value="Cancelar" onClick={props.handleCancelButton}/>
-                    <input type="button" value={props.title.length > 0 ? props.title.split(' ')[0] : "Confirmar"} onClick={handleConfirm}/>
+                <div className="p-5 w-[100%] flex justify-between">
+                    <button onClick={props.handleCancelButton} className="rounded px-5 py-1 text-white shadow-default bg-[#A00D0D]">Cancelar</button>
+                     <button onClick={handleConfirm} className="rounded px-5 py-1 shadow-default bg-[#C9CBCE]">{props.title.length > 0 ? props.title.split(' ')[0] : "Confirmar"}</button>
                 </div>
             </div>
 

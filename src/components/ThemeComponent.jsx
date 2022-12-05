@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import api from '../services/api';
 import Modal from "./Modal";
+import PlusCircle from '../assets/PlusCircle.png'
 
 
 export default function ThemeComponent(props){
@@ -68,10 +69,10 @@ export default function ThemeComponent(props){
     },[])
 
     return Themes ? (
-        <div className="w-[45%]">
-            <div className="flex justify-between">
+        <div className="mx-2 w-[100%]">
+            <div className="mb-3 flex justify-between">
                 <h2>Tema</h2>
-                <button onClick={handleClickModal} >Open modal</button>
+                <button onClick={handleClickModal} ><img src={PlusCircle} alt="botão de adicionar"/></button>
             </div>
             {openModal ? (<Modal createAndUpdateContent={createAndUpdateTheme} open = {openModal} handleCancelButton={handleCancelButton} handleConfirmButton={handleConfirmButton} title={Title}/>) : null}
             <DropDowm handleDeleteContent={handleDeleteTheme} handleClickModal={handleClickModal} handleChangeContent={props.handleChangeTheme} Content={props.Theme} ListContent = {Themes} PlaceHolder ={"Escolha o Tema"}/>
